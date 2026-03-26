@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>السيرة الذاتية | عبدالملك أحمد الغامدي</title>
+    <title>السيرة الذاتية | عبدالملك الغامدي</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+        /* استيراد خط احترافي */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;700&display=swap');
 
         * {
             box-sizing: border-box;
@@ -14,89 +15,176 @@
         }
 
         body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.8;
-            padding: 40px 20px;
+            font-family: 'Noto Kufi Arabic', sans-serif;
+            background-color: #e0e0e0; /* لون خلفية الشاشة خلف الورقة */
+            display: flex;
+            justify-content: center;
+            padding: 20px;
         }
 
-        .resume-wrapper {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #ffffff;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
+        /* تصميم الورقة A4 */
+        .page {
+            background-color: white;
+            width: 210mm; /* عرض A4 القياسي */
+            min-height: 297mm; /* ارتفاع A4 القياسي */
+            padding: 20mm; /* هوامش داخلية للورقة */
+            box-shadow: 0 0 15px rgba(0,0,0,0.2); /* ظل ليعطي إيحاء الورقة */
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
         }
 
+        /* تصميم الهيدر (الاسم والبيانات) */
         .header {
-            background-color: #1a252f;
-            color: #ffffff;
-            padding: 40px;
             text-align: center;
-            border-bottom: 5px solid #3498db;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .header h1 {
-            font-size: 32px;
+            font-size: 26px;
             font-weight: 700;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
+            color: #1a1a1a;
+            margin-bottom: 5px;
         }
 
         .contact-info {
+            font-size: 14px;
+            color: #555;
             display: flex;
             justify-content: center;
+            gap: 15px;
             flex-wrap: wrap;
-            gap: 20px;
-            font-size: 15px;
-            color: #bdc3c7;
         }
 
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .main-content {
-            padding: 40px;
-        }
-
+        /* تصميم الأقسام */
         .section {
-            margin-bottom: 35px;
-        }
-
-        .section:last-child {
-            margin-bottom: 0;
+            margin-bottom: 20px;
         }
 
         .section-title {
-            font-size: 22px;
-            color: #1a252f;
+            font-size: 18px;
             font-weight: 700;
-            margin-bottom: 20px;
+            color: #004a99; /* لون أزرق رسمي للألقاب */
+            text-transform: uppercase;
+            border-right: 4px solid #004a99;
+            padding-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .section-content {
+            font-size: 15px;
+            color: #333;
+            line-height: 1.6;
+            padding-right: 14px;
+        }
+
+        .sub-entry {
+            margin-bottom: 10px;
+        }
+
+        .entry-title {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .entry-details {
+            font-size: 14px;
+            color: #666;
             display: flex;
-            align-items: center;
-            gap: 10px;
+            justify-content: space-between;
         }
 
-        .section-title::after {
-            content: "";
-            flex: 1;
-            height: 2px;
-            background-color: #ecf0f1;
-            margin-right: 15px;
+        ul.skills-list {
+            list-style-type: disc;
+            margin-right: 20px;
         }
 
-        .objective-text {
-            font-size: 16px;
-            color: #555;
-            text-align: justify;
+        /* إعدادات الجوال */
+        @media screen and (max-width: 210mm) {
+            .page {
+                width: 100%;
+                padding: 10mm;
+                min-height: auto;
+            }
         }
 
-        .item-box {
+        /* إعدادات الطباعة/الحفظ PDF */
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .page {
+                box-shadow: none;
+                width: 100%;
+                margin: 0;
+                padding: 20mm; /* تأكيد الهوامش عند الطباعة */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <div class="header">
+            <h1>عبدالملك أحمد ربيع الغامدي</h1>
+            <div class="contact-info">
+                <span>📍 الخرج</span>
+                <span>📱 0553543676</span>
+                <span>✉️ maloookassd@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">الهدف المهني</h2>
+            <div class="section-content">
+                طالب طموح في المرحلة الثانوية، أبحث عن فرصة عمل تتيح لي توظيف مهاراتي وتطوير خبراتي العملية. أتميز بالاستعداد التام للتعلم السريع، وأسعى للمساهمة بفاعلية والتزام في بيئة عمل احترافية تدعم التطور المستمر.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">المؤهل العلمي</h2>
+            <div class="section-content">
+                <div class="sub-entry">
+                    <div class="entry-title">طالب في الصف الثاني ثانوي</div>
+                    <div class="entry-details">
+                        <span>[اكتب اسم مدرستك هنا]</span>
+                        <span>1446 هـ / 2025 م</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">الدورات التدريبية</h2>
+            <div class="section-content">
+                <div class="sub-entry">
+                    <div class="entry-title">دورة إتقان عملية البيع</div>
+                    <div class="entry-details">
+                        <span>منصة دروب</span>
+                        <span>2025 م</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">المهارات</h2>
+            <div class="section-content">
+                <ul class="skills-list">
+                    <li>إجادة استخدام الحاسب الآلي وبرامج مايكروسوفت (Word).</li>
+                    <li>مهارات حسابية ورياضية قوية.</li>
+                    <li>مهارات تواصل فعالة والعمل جماعي.</li>
+                    <li>الالتزام التام بالمواعيد والدقة في التنفيذ.</li>
+                    <li>القدرة العالية على التعلم السريع واكتساب مهارات جديدة.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
             margin-bottom: 20px;
             padding-right: 15px;
             border-right: 3px solid #3498db;
