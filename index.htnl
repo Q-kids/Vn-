@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية | عبدالملك أحمد الغامدي</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.8;
+            padding: 40px 20px;
+        }
+
+        .resume-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #1a252f;
+            color: #ffffff;
+            padding: 40px;
+            text-align: center;
+            border-bottom: 5px solid #3498db;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 15px;
+            color: #bdc3c7;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .main-content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 22px;
+            color: #1a252f;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::after {
+            content: "";
+            flex: 1;
+            height: 2px;
+            background-color: #ecf0f1;
+            margin-right: 15px;
+        }
+
+        .objective-text {
+            font-size: 16px;
+            color: #555;
+            text-align: justify;
+        }
+
+        .item-box {
+            margin-bottom: 20px;
+            padding-right: 15px;
+            border-right: 3px solid #3498db;
+        }
+
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .item-subtitle {
+            font-size: 15px;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-tag {
+            background-color: #f8f9fa;
+            color: #2c3e50;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background-color: #3498db;
+            color: #ffffff;
+            border-color: #3498db;
+        }
+
+        /* إعدادات الطباعة للحفظ كـ PDF */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .resume-wrapper {
+                box-shadow: none;
+                border-radius: 0;
+                max-width: 100%;
+            }
+            .header {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .skill-tag {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-wrapper">
+        <!-- الرأس ومعلومات الاتصال -->
+        <header class="header">
+            <h1>عبدالملك أحمد ربيع الغامدي</h1>
+            <div class="contact-info">
+                <span class="contact-item">📍 الخرج، المملكة العربية السعودية</span>
+                <span class="contact-item">📱 0553543676</span>
+                <span class="contact-item">✉️ maloookassd@gmail.com</span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- الهدف المهني -->
+            <section class="section">
+                <h2 class="section-title">الهدف المهني</h2>
+                <p class="objective-text">
+                    طالب طموح في المرحلة الثانوية، أبحث عن فرصة عمل تتيح لي توظيف مهاراتي وتطوير خبراتي العملية. أتميز بالاستعداد التام للتعلم السريع، وأسعى للمساهمة بفاعلية والتزام في بيئة عمل احترافية تدعم التطور المستمر.
+                </p>
+            </section>
+
+            <!-- المؤهل العلمي -->
+            <section class="section">
+                <h2 class="section-title">المؤهل العلمي</h2>
+                <div class="item-box">
+                    <h3 class="item-title">طالب في الصف الثاني ثانوي</h3>
+                    <div class="item-subtitle">
+                        <span>المدرسة: [اكتب اسم مدرستك هنا]</span>
+                        <span>1446 هـ / 2025 م</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- الدورات التدريبية -->
+            <section class="section">
+                <h2 class="section-title">الدورات التدريبية</h2>
+                <div class="item-box">
+                    <h3 class="item-title">دورة إتقان عملية البيع</h3>
+                    <div class="item-subtitle">
+                        <span>الجهة: منصة دروب</span>
+                        <span>2025 م</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- المهارات -->
+            <section class="section">
+                <h2 class="section-title">المهارات والقدرات</h2>
+                <div class="skills-container">
+                    <span class="skill-tag">إجادة استخدام الحاسب الآلي</span>
+                    <span class="skill-tag">إتقان Microsoft Word</span>
+                    <span class="skill-tag">مهارات حسابية ورياضية قوية</span>
+                    <span class="skill-tag">مهارات تواصل فعالة</span>
+                    <span class="skill-tag">الالتزام والدقة في العمل</span>
+                    <span class="skill-tag">سرعة التعلم</span>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
